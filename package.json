@@ -1,0 +1,25 @@
+{
+  "name": "smartedu-dofee-plugin",
+  "version": "1.16.0",
+  "description": "SmartEdu-DoFee 学习进度监控与智能错题库管理扩展 (Next-Gen WXT 现代化架构)",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dingdingdang22/splugin.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "check-version": "node scripts/check-version.js",
+    "version:sync": "node scripts/check-version.js --sync",
+    "build": "node scripts/check-version.js && wxt build",
+    "build:firefox": "node scripts/check-version.js && wxt build -b firefox",
+    "zip": "wxt zip",
+    "compile": "node scripts/check-version.js && tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "wxt": "^0.19.28"
+  }
+}
